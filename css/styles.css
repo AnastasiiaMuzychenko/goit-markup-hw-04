@@ -208,11 +208,6 @@ body {
   cursor: pointer;
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-  color: var(--second-background-color);
-}
-
 /* ------Features------ */
 
 .features {
@@ -247,17 +242,32 @@ body {
   color: var(--main-text-color);
 }
 
-.features-icon {
-  display: block;
-
-  /* padding: 25px 100px; */
-}
 .features-link {
   display: inline-block;
   padding: 25px 100px;
   background: var(--additional-background-color);
   border-radius: 4px;
   margin-bottom: 30px;
+}
+
+.features-img-list {
+  display: flex;
+  justify-content: center;
+}
+
+.features-img-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 270px;
+  background-color: var(--additional-background-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features-img-item:not(:last-child) {
+  margin-right: 30px;
 }
 /* ------Work------ */
 
@@ -290,8 +300,8 @@ body {
 
 .staff {
   background-color: var(--additional-background-color);
-  padding-top: 102px;
-  padding-bottom: 86px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .staff-title {
@@ -366,7 +376,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--main-text-color);
+  color: #afb1b8;
 }
 
 .staff-social-link:hover,
@@ -380,8 +390,8 @@ body {
 }
 /* ------Clients------ */
 
-.clients-container {
-  padding-top: 112px;
+.clients {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -392,7 +402,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
-  margin-bottom: 35px;
+  margin-bottom: 50px;
 }
 
 .clients-list {
@@ -401,29 +411,28 @@ body {
 
 .clients-list-item {
   margin-right: 30px;
-  padding: 15px 32px;
-  border: 1px solid #afb1b8;
   box-sizing: border-box;
-  border-radius: 4px;
 }
 
 .clients-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  height: 92px;
+  width: 170px;
 }
 
 .clients-list-link:focus,
 .clients-list-link:hover {
   color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .clients-icon {
   fill: currentColor;
-}
-
-.clients-list-item:hover,
-.clients-list-item:focus {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 /* ------Portfolio------ */
